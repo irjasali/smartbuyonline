@@ -3,6 +3,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Raleway:ital,wght@0,100;1,100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@100&family=Raleway:ital,wght@0,100;1,100&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@100&family=Nunito:wght@200&family=Raleway:ital,wght@0,100;1,100&family=Titillium+Web:wght@200&family=Ubuntu:wght@300&display=swap');
 * {
   margin: 0px;
   padding: 0px;
@@ -29,16 +30,19 @@ a:active {
 }
 
 .social_networks {
+  width: 100%;
+  height: 10vh;
   display: flex;
   flex-direction: wrap;
   justify-content: flex-end;
   align-items: flex-end;
   align-content: center;
+  padding: 0px 0px;
 }
 .social_networks i {
   height: 60px;
   width: 50px;
-  padding: 10px 10px 5px 10px;
+  padding: 5px 5px 5px 5px;
   margin: 1px 1px;
   font-size: 27px;
   text-align: justify;
@@ -62,8 +66,7 @@ a:active {
   text-align: center;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  z-index: 99;
- 
+  z-index: 99; 
   /* position: absolute; */
 }
 
@@ -187,7 +190,7 @@ a:active {
 }
 
 .encabezado h1 {
-  padding: 0px 0px 21px 72px;
+  padding: 0px 0px 0px 72px;
 }
 .encabezado h1 a {
   color: #fff;
@@ -210,10 +213,8 @@ a:active {
   /* flex-wrap: wrap; */
   flex-flow: row wrap;
   justify-content: space-evenly;
-
-  
-
 }
+
 .Menu {
   margin-left: 200px;
   position: sticky;
@@ -253,10 +254,30 @@ a:active {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-content: space-around;
-  font-size: 21px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  flex-flow: row wrap;            
+  justify-content: space-evenly;
+  align-items:baseline;
+  align-content:space-between;
+  gap: 2px;
+  justify-content: space-evenly;
+  font-size: 12x;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+
+.MenuP__opciones {
+  list-style: none;
+  text-align: justify;
+  text-decoration: none;
+  display: flex;
+  flex-flow: row wrap;            
+  justify-content: space-evenly;
+  align-items:baseline;
+  align-content:space-between;
+  gap: 2px;
+  justify-content: space-evenly;
+  padding: 5px 5px 5px 5px;
+
 }
 
 .MenuP__opciones li {
@@ -265,7 +286,7 @@ a:active {
   text-decoration: none;
   display: inline-flex;
   flex-direction: wrap;
-  padding: 20px 20px 50px 20px;
+  padding: 10px 20px 10px 20px;
 }
 
 .MenuP__elementos {
@@ -298,11 +319,11 @@ a:active {
 }
 
 input.subMenu__elementos--input {
-  padding: 10px 5px 20px 10px;
-  margin: 10px 5px 20px 10px;
+  padding: 10px 10px 20px 10px;
+  margin: 10px 10px 20px 10px;
   width: 99%;
   height: 3vw;
-  border: 1px solid #c3c3c3;
+  border: 1px solid #e7890d;
   border-radius: 5px;
   font-family: "Roboto", sans-serif, Arial, Helvetica;
   font-size: 18px;
@@ -310,9 +331,11 @@ input.subMenu__elementos--input {
 }
 
 input.subMenu__elementos--input:hover {
-  box-shadow: 1px 1px 1px #888;
+  box-shadow: 1px 1px 1px #e7890d
 }
-
+input.subMenu__elementos--input:focus {
+  box-shadow: 1px 1px 1px #e7890d
+}
 .subMenu__imagen {
   border-radius: 10px;
   margin: 25px 0px 2px 0px;
@@ -554,7 +577,7 @@ p.card__comentarios i {
   padding: 5px 5px 5px 1px;
 }
 
-@media all and (max-width: 320px) {
+@media all and (max-width: 340px) and (min-width: 5px) {
   .encabezado {
     justify-content: space-around;
     display: flex;
@@ -564,7 +587,8 @@ p.card__comentarios i {
   }
   .social_networks {
     display: flex;
-    justify-content: center;
+    justify-content:space-evenly;
+    
     flex-direction: row;
     background-color: #0314f5;
   }
@@ -585,6 +609,14 @@ p.card__comentarios i {
   body {
     background-color: #fff;
   }
+  h1 {
+    font-size: 21px;
+    
+  }
+  .seccion {
+    font-size: 15px;
+    text-align: left;
+  }
   .card {
     margin: 25px 3px 25px 13%;
   }
@@ -595,12 +627,36 @@ p.card__comentarios i {
   .pie_derechosR {
     height:90vh;
     font-size: 15px;
+  }  
+  .MenuP {
+    display: flex;
+    flex-flow: column wrap;            
+    justify-content: space-evenly;
+    align-items:baseline;
+    align-content:space-between;
+    gap: 2px;
+    justify-content: space-evenly
   }
-  .nav{ 
-    flex-direction: row;
+  .Menu__opciones {
+    display: flex;
+    flex-flow: column wrap;            
+    justify-content: space-evenly;
+    align-items:baseline;
+    align-content:space-between;
+    gap: 2px;
+    justify-content: space-evenly;
+  }
+  .subMenu{
+    width: auto;
+    height: auto;
+    padding: 5px 5px;
+  }
+  .subMenu__elementos--input {
+    width: 90%;
+    text-align: left;
   }
 }
-@media all and (max-width: 480px) {
+@media only screen and (max-width: 500px) and (min-width: 341px) {  
   .encabezado {
     justify-content: space-around;
     display: flex;
@@ -610,8 +666,9 @@ p.card__comentarios i {
   }
   .social_networks {
     display: flex;
-    justify-content: center;
+    justify-content:space-evenly;
     flex-direction: row;
+    align-items: center;
     background-color: #0314f5;
   }
 
@@ -629,7 +686,15 @@ p.card__comentarios i {
     
   }
   body {
-    background-color: #e4dede;
+    background-color: #fff;
+  }
+  h1 {
+    font-size:27px;
+    text-align: center;
+  }
+  .seccion {
+    font-size: 15px;
+    text-align: left;
   }
   .card {
     margin: 25px 3px 25px 19%;
@@ -642,13 +707,33 @@ p.card__comentarios i {
     height: 90vh;
     font-size: 15px;
   }
-  .nav{ 
-    flex-direction: column;
+  .MenuP {
+    display: flex;
+    flex-flow: column wrap;            
+    justify-content: space-evenly;
+    align-items:baseline;
+    align-content:space-between;
+    gap: 2px;
+    justify-content: space-evenly
+  }
+  .Menu__opciones {
+    display: flex;
+    flex-flow: column wrap;            
+    justify-content: space-evenly;
+    align-items:baseline;
+    align-content:space-between;
+    gap: 2px;
+    justify-content: space-evenly;
+  }
+  .subMenu{
+    width: auto;
+    height: auto;
+    padding: 5px 5px;
   }
 }
 
 
-@media all and (max-width: 960px) {
+@media all and (max-width: 960px)  and (min-width: 821px){
   .encabezado {
     justify-content: space-around;
     display: flex;
@@ -658,13 +743,17 @@ p.card__comentarios i {
   }
   .social_networks {
     display: flex;
-    justify-content: center;
-
+    justify-content:space-evenly;
+    
     flex-direction: row;
+    align-items: center;
     background-color: #0314f5;
   }
   body {
-    background-color: #e4dede;
+    background-color: #fff;
+  }
+  h1 {
+    text-align: center;
   }
   .carrito_mensaje_top {
     height: 28px;

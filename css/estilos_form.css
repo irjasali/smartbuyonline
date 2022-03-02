@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@100&family=Nunito:wght@200&family=Raleway:ital,wght@0,100;1,100&family=Titillium+Web:wght@200&family=Ubuntu:wght@300&display=swap');
 :root {
   --colorTextos: #49454567;
 }
@@ -10,13 +11,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Roboto";
-  height: 30vh;
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-}
 .formulario {
   background-color: #fff;
   width: 100vw;
@@ -27,12 +21,17 @@ body {
 h2 {
   text-align: Center;
   font-weight: 900;
+  padding: 20px;
+  color: #007bff;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bolder;
+  
 }
 
 form {
   background: #fff;
-  padding: 10px 10px;
-  box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+  padding: 30px 30px;
+  box-shadow: 0 0 6px 0 rgba(221, 213, 213, 0.8);
   border-radius: 10px;
 }
 
@@ -41,6 +40,7 @@ form {
   margin: auto;
   border: 2px solid #2196f3;
   border-radius: 10px;
+  padding: 10px 10px;
 }
 
 form .grupo {
@@ -56,7 +56,7 @@ input {
   display: block;
   width: 100%;
   border: none;
-  border-bottom: 1px solid var(--colorTextos);
+  border-bottom: 1px solid#2196f3;
 }
 
 input:focus {
@@ -77,7 +77,7 @@ label {
 input:focus ~ label,
 input:valid ~ label {
   top: -14px;
-  font-size: 12px;
+  font-size: 18px;
   color: #2196f3;
 }
 
@@ -105,7 +105,6 @@ input:focus ~ .barra::before {
 button {
   font-family: "roboto";
   background: #4568dc;
-
   border: none;
   display: block;
   width: 80%;
@@ -115,14 +114,13 @@ button {
   font-size: 16px;
   cursor: pointer;
   border-radius: 10px;
-
 }
 button a {
   text-decoration: none;
   color: #fff;
 }
 
-button  a:hover {
+button a:hover {
   text-decoration: none;
   color: #fff;
 }
@@ -141,5 +139,5 @@ button  a:hover {
   border-radius: 10px;
 }
 button:hover {
-  background: #4568dc;
+  background: #28a7e9;
 }

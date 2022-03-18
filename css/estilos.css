@@ -4,6 +4,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Raleway:ital,wght@0,100;1,100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@100&family=Raleway:ital,wght@0,100;1,100&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@100&family=Nunito:wght@200&family=Raleway:ital,wght@0,100;1,100&family=Titillium+Web:wght@200&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Asap:wght@400;500&display=swap');
 * {
   margin: 0px;
   padding: 0px;
@@ -46,6 +48,8 @@ a:active {
   margin: 1px 1px;
   font-size: 27px;
   text-align: justify;
+  transition: all 0.5s ease;
+ 
 }
 .social_networks a {
   text-decoration: none;
@@ -53,6 +57,7 @@ a:active {
 .social_networks a:hover {
   text-decoration: none;
   color: #fff;
+  transform: scale(1.2);
 }
 
 #back_to_top {
@@ -133,6 +138,7 @@ a:active {
   transition: 0.5s;
   z-index: 98;
   color: #f6f6f8;
+  
 }
 
 .carrito_mensaje_top p a {
@@ -156,11 +162,15 @@ a:active {
   font-stretch: ultra-condensed;
   color: #fff;
   text-decoration: none;
+  transition: all 0.5s ease;
 }
 
 .link__carrito a:hover {
   color: #fff;
   text-decoration: none;
+  font-size: 2%;
+
+
 }
 
 .encabezado {
@@ -311,7 +321,7 @@ a:active {
   position: sticky;
   top: 0;
   width: 100%;
-  height: 35vh;
+  height: 30vh;
   display: inline-block;
   text-align: center;
   font-weight: 400;
@@ -401,10 +411,10 @@ li.subMenu__elementos:hover {
 } */
 .card {
   margin: 25px 3px 25px 5%;
-  padding: 10px 5px 10px 10px;
+  padding: 5px 5px 5px 10px;
   border: 1px solid #ccc;
   width: 250px;
-  height: 450px;
+  height: 405px;
   left: 10%;
   display: inline-flex;
   flex-direction: row;
@@ -428,11 +438,12 @@ button:hover {
   text-align: center;
   margin: 2px 2px 2px 2px;
   padding: 5px 5px 5px 5px;
-  font-size: 21px;
+  font-size: 20px;
   background-color: rgb(165, 227, 243);
   width: 100%;
-  height: 50px;
-  border-radius: 5px;
+  height: 45px;
+  border-radius: 3px;  
+  cursor: pointer;
 }
 
 p.card__precio {
@@ -445,7 +456,7 @@ p.card__precio {
 .card_botonComprar {
   background-color: rgb(238, 31, 49);
   width: 100%;
-  height: 50px;
+  height: 40px;
   color: #fff;
   padding: 5px 5px;
   border: none;
@@ -457,7 +468,7 @@ p.card__precio {
 .card_botonComprar--activo {
   background-color: rgb(238, 31, 49);
   width: 100%;
-  height: 50px;
+  height: 40px;
   color: #fff;
   padding: 5px 5px;
   border: none;
@@ -483,7 +494,7 @@ p.card__precio {
 
 .card__texto {
   text-align: center;
-  font-size: 21px;
+  font-size: 15px;
   color: rgb(136, 155, 161);
   font-family: "Roboto", sans-serif, Arial, Helvetica;
 }
@@ -502,8 +513,11 @@ p.card__comentarios i {
 .seccion {
   padding: 10px 25px;
   margin: 10px 25px;
-  border-bottom: 2px #c3c3c3 dotted;
+  border-bottom: 1px #c3c3c3 dotted;
   width: 99%;
+  color: #0314f5;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 21px;
 }
 
 .pie_derechosR {

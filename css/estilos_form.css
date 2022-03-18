@@ -99,6 +99,7 @@ input:valid ~ label {
 
 input:focus ~ .barra::before {
   width: 100%;
+
 }
 
 button {

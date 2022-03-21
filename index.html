@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/estilos.css" />
+   
+
+
     <title>Smart Buy On line</title>
   </head>
 
@@ -16,7 +19,7 @@
         <a href="#"><i class="fab fa-instagram-square"></i></a>
         <a href="#"><i class="fab fa-youtube"></i></a>
       </p>
-  
+      
       <h1 id="inicio"><a href="index.html">SmartBuy.com.mx</a></h1>
 
       <nav class="MenuP">
@@ -46,7 +49,7 @@
           <li class="MenuP__elementos">
             <a class="MenuP__link" href="#carrito">
               <i id="carro" class="fas fa-cart-arrow-down"></i>
-              <p class=""><a class="link__carrito" href="#inicio">1</a></p>
+              <p class=""><a class="link__carrito " href="#inicio">1</a></p>
             </a>
           </li>
         </ul>
@@ -54,43 +57,44 @@
     </header>
 
     <nav class="subMenu">
-      <img
+      <!-- <img
         class="subMenu__logo"
         alt="Logo Empresa"
         src="./img/logo.svg"
         set=""
-      />
+      /> -->
       <!-- <div class="">
         <p id="" class="numero"><a href="#inicio">1</a></p>
       </div> -->
       <ul class="subMenu__opciones">
-        <li class="subMenu__elementos">
-          <a class="subMenu__link subMenu__link--active" href="#servidores"
+        <li class="subMenu__elementos ">
+          <a class="subMenu--opciones subMenu__link  " href="#servidores"
             >Servidores</a
           >
         </li>
         <li class="subMenu__elementos">
-          <a class="subMenu__link" href="#escritorio">PC's de Escritorio</a>
+          <a class="subMenu__link subMenu--opciones" href="#escritorio">PC's de Escritorio</a>
         </li>
         <li class="subMenu__elementos">
-          <a class="subMenu__link" href="#laptos">Laptos</a>
+          <a class="subMenu__link subMenu--opciones" href="#laptos">Laptos</a>
         </li>
         <li class="subMenu__elementos">
-          <a class="subMenu__link" href="#componentes">Componentes </a>
+          <a class="subMenu__link subMenu--opciones" href="#componentes">Componentes </a>
         </li>
         <li class="subMenu__elementos">
-          <a class="subMenu__link" href="#">Carrito</a>
+          <a class="subMenu__link subMenu--opciones" href="#">Carrito</a>
         </li>
       </ul>
       <input
-        class="subMenu__elementos--input"
+        class="subMenu__elementos--input input.subMenu__elementos--input:active"
         type="search"
         name="busqueda"
         id="busqueda"
         placeholder="Búsqueda..."
       />
     </nav>
-    <main class="">
+
+    <main class="container">
       <section class="carrusel_img">
         <img src="img/Banner.jpg" alt="Banner Principla" />
       </section>
@@ -98,7 +102,7 @@
 
       <div class="contenedor__parrafo">
         <h2 class="seccion" id="servidores">
-          <i class="fas fa-server">
+          <i class="fas fa-server ">
             Servidores Dell, Hp, Lenovo y muchos más...
           </i>
         </h2>
@@ -179,12 +183,11 @@
       <br />
       <div class="contenedor__parrafo">
         <h2 class="seccion" id="escritorio">
-          <i class="fas fa-desktop">
+          <i class="fas fa-desktop ">
             Computadoras Asus, Acer, Lenono y mucho más..
           </i>
         </h2>
       </div>
-   
 
       <section class="card">
         <article class="card__encabezado">
@@ -246,13 +249,11 @@
       <br />
       <div class="contenedor__parrafo">
         <h2 class="seccion" id="escritorio">
-          <i class="fas fa-laptop">
-            Laptop de todas las marcas...
-          </i>
+          <i class="fas fa-laptop"> Laptop de todas las marcas... </i>
         </h2>
       </div>
-   
-           <section class="card">
+
+      <section class="card">
         <article class="card__encabezado">
           <p class="card__titulo">Articulo</p>
           <img class="subMenu__imagen" src="./img/logo.svg" alt="Test" />
@@ -317,7 +318,7 @@
           </i>
         </h2>
       </div>
-      
+
       <section class="card">
         <article class="card__encabezado">
           <p class="card__titulo">Articulo</p>
@@ -382,10 +383,11 @@
         <a href="#inicio"><i class="fas fa-arrow-up"></i></a>
       </div>
     </main>
+
     <footer class="pie_derechosR">
       <p class="pie__derechosR--mensaje">
         Smart Buy On Line. Derechos Reservados | 2021
-      </p>      
+      </p>
       <div class="footer_secciones">
         <div class="conocenos">
           <ul>
@@ -398,7 +400,7 @@
             <li><a href="">Preguntas frecuentes</a></li>
           </ul>
         </div>
-        <div class="conocenos">       
+        <div class="conocenos">
           <ul>
             <h3>Métodos de Pago</h3>
             <li><a href="">Tarjetas de crédito</a></li>
@@ -421,5 +423,6 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

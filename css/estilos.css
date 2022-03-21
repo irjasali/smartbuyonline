@@ -11,6 +11,8 @@
   --encabezado: rgb(0,67,168);
   --redes_sociales: rgb(1,174,251);
   --carrito: #32B9E3;
+  --color_numero: #FAF258;
+  --color_boton_Comprar:#ffd814;
 }
 * {
   margin: 0px;
@@ -123,6 +125,9 @@ a:active {
   left: 30px;
 }
 
+.logo {
+  padding: 1px 1px 1px 90px;
+}
 /* .carrito_mensaje_top {
   height: 28px;
   width: 28px;
@@ -160,33 +165,31 @@ a:active {
 .carrito_mensaje_top p a {
   color: #fff;
   text-decoration: none;
+ 
 }
 
-.link__carrito {
-  color: #fff;
-  height: 10px;
+.link__carrito { 
+  height: 7px;
   width: 10px;
-  padding: 15px 15px 15px 15px;
-  margin: 10px 10px;
-  background-color: var(--carrito);
+  padding: 10px 10px 10px 10px;
+  margin: 7px 7px;
+  background-color:#FFC745;
   border-radius: 10px 5% / 20px 30px;
   text-align: center;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   z-index: 98;
-  font-size: 13px;
-  font-stretch: ultra-condensed;
-  color: #fff;
+  font-size: 15px;  
+  color: #0043a8;
   text-decoration: none;
   transition: all 0.5s ease;
+  font-family: "Roboto", sans-serif, Arial, Helvetica;
 }
 
 .link__carrito a:hover {
   color: #fff;
   text-decoration: none;
   font-size: 2%;
-
-
 }
 
 .encabezado {
@@ -337,7 +340,7 @@ a:active {
   position: sticky;
   top: 0;
   width: 100%;
-  height: 20vh;
+  height: 23vh;
   display: inline-block;
   text-align: center;
   font-size: 33px;
@@ -366,7 +369,27 @@ input.subMenu__elementos--input:hover {
 input.subMenu__elementos--input:focus {
   box-shadow: 1px 1px 1px var(--redes_sociales);
   border: 1px solid  var(--redes_sociales);;
+  outline: none;
 }
+input.subMenu__elementos--input:active{
+  background-color:#2475bb;
+  border: 1px solid  var(--redes_sociales);;
+  outline: none;
+}
+
+.imagen__compra {
+  border-radius: 5px;
+  margin: 25px 0px 2px 0px;
+  padding: 2px 0px 2px 0px;
+  width: 250px;
+  height: 150px;
+  position: relative;
+  background-color: #fffefe;
+  border: 1px solid #c0c0c0;
+  display: inline-block;
+  
+}
+  
 .subMenu__imagen {
   border-radius: 10px;
   margin: 25px 0px 2px 0px;
@@ -456,7 +479,7 @@ section.card:hover {
 }
 
 button:hover {
-  background-color: rgb(238, 31, 49);
+  background-color:var(--color_boton_Comprar);
   cursor: pointer;
   border-bottom: 2px solid rgb(109, 104, 107);
   border-right: 2px solid rgb(109, 104, 107);
@@ -481,7 +504,7 @@ p.card__precio {
   font-size: 15px;
 }
 .card_botonComprar {
-  background-color: rgb(238, 31, 49);
+  background-color: var(--color_boton_Comprar);
   width: 100%;
   height: 40px;
   color: #fff;
@@ -493,10 +516,10 @@ p.card__precio {
   box-shadow: 1px 1px 1px rgb(230, 223, 223);
 }
 .card_botonComprar--activo {
-  background-color: rgb(238, 31, 49);
+  background-color:var(--color_boton_Comprar);
   width: 100%;
   height: 40px;
-  color: #fff;
+  color: black;
   padding: 5px 5px;
   border: none;
   border-radius: 5px;
@@ -510,7 +533,7 @@ p.card__precio {
 .card_botonComprar--activo:hover {
   width: 100%;
   height: 50px;
-  color: #fff;
+  color: black;
   padding: 5px 5px;
   border: none;
   border-radius: 5px;
@@ -547,6 +570,7 @@ p.card__comentarios i {
 }
 
 .pie_derechosR {
+  margin-top: 10px;
   padding: 31px 10px 50px 10px;
   width: 100%;
   height: 50vh;
@@ -616,6 +640,123 @@ p.card__comentarios i {
   justify-content: space-around;
   padding: 5px 5px 5px 1px;
 }
+/* carrito */
+.container__pago {  display: grid;
+  grid-template-columns: 1.5fr 0.5fr;
+  grid-template-rows: 1fr;
+  gap: 2px 10px;
+  grid-auto-flow: row;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  justify-items: start;
+  align-items: center;
+  grid-template-areas:
+    "promociones pagar";
+    width: 97%; 
+    height: 90%; 
+    margin: 5px 5px;
+    padding: 5px 5px;
+    background-color: #f2fcfd;
+    border: 1px solid var(--carrito);
+}
+
+.promociones { grid-area: promociones; }
+
+.pagar { grid-area: pagar; }
+
+.container__carrito{
+  display: grid;
+  grid-template-columns: 3px 0.7fr 1.5fr 0.3fr;
+  grid-template-rows:  0.1fr 0.4fr 0.4fr;
+  gap: 1px 50px;
+  grid-auto-flow: row;
+  grid-template-areas:    
+    "Seleccionar  Mensaje1 mensaje2 mensaje3"
+    "check imagen1 descripcion precio"
+    ". vacio1 subtotal neto";
+    border: 1px solid #c0c0c0;
+    border-radius: 10px;
+    width: 97%; 
+    height: 90%; 
+    margin:1px 5px 1px 5px;
+    padding: 15px 20px 1px 20px;
+    background-color: #f2fcfd;
+    justify-content:space-around;
+    align-content: space-evenly;
+    justify-items:auto;
+    align-items: center;
+}
+
+
+.Mensaje1 { 
+  grid-area: Mensaje1; 
+  border-bottom: 1px solid #c0c0c0;
+  
+}
+
+.mensaje2 { 
+  grid-area: mensaje2;
+  border-bottom: 1px solid #c0c0c0;
+
+ }
+
+.mensaje3 { 
+  grid-area: mensaje3; 
+  border-bottom: 1px solid #c0c0c0;
+  text-align:right;
+}
+
+.imagen1 { 
+  grid-area: imagen1; 
+}
+
+.descripcion { grid-area: descripcion; }
+
+.precio { 
+  grid-area: precio; 
+  text-align:right;
+}
+
+.vacio1 { grid-area: vacio1; }
+
+.subtotal { 
+  grid-area: subtotal; 
+  text-align: right;
+}
+
+.neto { 
+  grid-area: neto; 
+  text-align:right;
+}
+
+.Pago { grid-area: Pago; }
+
+.container_car--buy {  
+  display: grid;
+  grid-template-columns: 1fr 2fr 0.8fr;
+  grid-template-rows: 0.5fr;
+  gap: 2px 2px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "imagen_Art descripcion_Art precio_Art";
+    border: 1px solid saddlebrown;
+}
+
+.imagen_Art { 
+  grid-area: imagen_Art; 
+  padding: 50px 50px;
+  
+}
+
+.descripcion_Art { 
+  grid-area: descripcion_Art; 
+  padding: 50px 50px;
+}
+
+.precio_Art { 
+  grid-area: precio_Art; 
+  padding: 50px 50px;}
+
 
 @media all and (max-width: 340px) and (min-width: 5px) {
   .encabezado {

@@ -23,13 +23,13 @@
       <nav class="MenuP">
         <ul class="MenuP__opciones">
           <li class="MenuP__elementos">
-            <a class="MenuP__link" href="#escritorio">Categorias</a>
+            <a class="MenuP__link" href="404.html">Categorias</a>
           </li>
           <li class="MenuP__elementos">
-            <a class="MenuP__link" href="#laptos">Ofertas</a>
+            <a class="MenuP__link" href="404.html">Ofertas</a>
           </li>
           <li class="MenuP__elementos">
-            <a class="MenuP__link" href="#componentes">Servicio al Cliente</a>
+            <a class="MenuP__link" href="404.html">Servicio al Cliente</a>
           </li>
 
           <li class="MenuP__elementos">
@@ -45,9 +45,9 @@
             <a class="MenuP__link" href="carrito.html">Carrito</a>
           </li>
           <li class="MenuP__elementos">
-            <a class="MenuP__link" href="#carrito">
+            <a class="MenuP__link" href="carrito.html">
               <i id="carro" class="fas fa-cart-arrow-down"></i>
-              <p class=""><a class="link__carrito" href="#inicio">1</a></p>
+              <p class=""><a class="link__carrito" href="carrito.html">1</a></p>
             </a>
           </li>
         </ul>
@@ -66,20 +66,20 @@
       </div> -->
       <ul class="subMenu__opciones">
         <li class="subMenu__elementos">
-          <a class="subMenu--opciones subMenu__link" href="#servidores"
+          <a class="subMenu--opciones subMenu__link" href="index.html"
             >Servidores</a
           >
         </li>
         <li class="subMenu__elementos">
-          <a class="subMenu__link subMenu--opciones" href="#escritorio"
+          <a class="subMenu__link subMenu--opciones" href="index.html"
             >PC's de Escritorio</a
           >
         </li>
         <li class="subMenu__elementos">
-          <a class="subMenu__link subMenu--opciones" href="#laptos">Laptos</a>
+          <a class="subMenu__link subMenu--opciones" href="index.html">Laptos</a>
         </li>
         <li class="subMenu__elementos">
-          <a class="subMenu__link subMenu--opciones" href="#componentes">Componentes
+          <a class="subMenu__link subMenu--opciones" href="index.html">Componentes
           </a>
         </li>
         <li class="subMenu__elementos">
@@ -100,12 +100,16 @@
         <img src="img/Banner.jpg" alt="Banner Principla" />
         
       </section>
-      <div class="container__pago">
-        <div class="promociones">taerjata de regalo</div>
-        <div class="pagar">Proceder al pago</div>
+      <div class="container__pago container__pago--tarjeta">        
+        <div class="promociones">
+          Carrito de Compras, usted tiene (7) articulos
+        </div>
+        <div class="pagar">          
+          <button class="botonComprar"> Pagar</button>
+        </div>
       </div>
     <div>
-        <h3>Carrito</h3>
+        
     </div>
   
       <div class="container__carrito">
@@ -134,16 +138,33 @@
             Eliminar | Guardar Ver | Productos similares
         </div>
         <div class="neto">2569.336</div>        
-            
       </div>
-      <div class="container__carrito">       
-        <div class="imagen1"> <img class="imagen__compra"" src="./img/logo.svg" alt="Test" /></div>
-        <div class="descripcion"><p>(60 PACK) Mascarilla Cubrebocas KN95 (60 Pack) | NORMA GB2626-2006 GRABADA | mayor comodidad | Uso Civil (PLATAFORMA I)</p></div>
+      <div class="container__carrito">
+        <div class="Seleccionar"> </div>
+        <div class="Mensaje1">Imagen</div>
+        <div class="mensaje2">Articulos seleccionados</div>
+        <div class="mensaje3">Precio</div>
+       <div class="check">
+           <input type="checkbox">
+       </div>
+        <div class="imagen1"> 
+            <img class="imagen__compra" src="./img/logo.svg" alt="Test" /></div>
+        <div class="descripcion"><p>(60 PACK) Mascarilla Cubrebocas KN95 (60 Pack) |  GB2626-2006 GRABADA | mayor comodidad | Uso Civil (PLATAFORMA I)</p></div>
         <div class="precio"><p>256.33</p></div>
-        <div class="vacio1"></div>
-        <div class="subtotal">Subtotal</div>
-        <div class="neto">2569.336</div>
-        
+        <div class="vacio1">
+            <label for="cantidad">Cantidad</label>
+            <select id="cantidad" name="cantidad">
+            <option value="" selected="selected">- selecciona -</option>
+            <option value="windows">1</option>
+            <option value="mac">2</option>
+            <option value="linux">3</option>
+            <option value="otro">4</option>
+            </select>
+        </div>
+        <div class="subtotal">
+            Eliminar | Guardar Ver | Productos similares
+        </div>
+        <div class="neto">2569.336</div>        
       </div>
      
    
